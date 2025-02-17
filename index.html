@@ -1,2 +1,119 @@
-<h1> Hello World1</h1>
-<p>THIS IS A WEBSITE</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Choice Humanitarian</title>
+    <style>
+        body {
+            margin: 0; 
+            font-family: Arial, sans-serif;
+        }
+        .top-nav {
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            background-color: #D1D7DB;
+            padding: 10px;
+            border-bottom: 2px solid #C0C4C8;
+       
+   
+   
+        }
+        .top-nav button {
+            background: none; /* Remove default button styles */
+            border: none;
+            cursor: pointer;
+            margin-left: 10px; /* Space between buttons */
+        }
+        .top-nav img {
+            width: 30px;
+            height: 30px;
+        }
+        nav {
+            background-color: #E5EFF1; 
+            padding: 30px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none; /* Remove underline */
+            color: #818F9A; /* Change text color */
+            font-size: 22px;
+        }
+        .logo {
+            width: 280px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+   <p>
+<a href="https://www.facebook.com/ChoiceBolivia">
+        <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAUVBMVEX///+Xl5eRkZGcnJzc3NyUlJS6urru7u76+vrn5+fg4ODx8fH29va1tbXIyMiOjo6mpqaqqqq/v7/FxcWoqKjS0tKxsbHR0dG+vr6IiIjk5OQQlXJaAAAGAElEQVR4nO3d63qiMBAGYAETDgoJWqXr/V/ogrq1ZSYSGgjJ7Hw/+yDhbRDJgbDb/UzZyVZnsUa3sit3b1LKNBUiiTlCpKk0IUut4tb9i1AaNdZEfEOEqoEvT+j4hogk/wms1NaHtHhURRz4k5hTBPbE14m69aGslq+rKK2LzCvieUUtaZ6jQ9Tjd1FTrcK+EjXxKnxWoqRbhX0lyl6Ybn0UqybtT1LiwnLXUT5J+9O0w76GfRMr0iAWuWvBH9N6H2tq+JVrdxqoYdMqnsDbM73LQBXutz5Mh+xBJWYsjCwsZGH4YSELww8LWeglRV5dmpOsr/fUtZSnc9N0l31V5oeieP/h0IVFdb4m91YQyKN1pFTfQNKtPF9uB3QPQQtvp0zZjV4+wdmHbMajaOEKb7VAmq+TUnWOQ3hskvm8h7GJQXhwGJqNQejii0J4chtaD15YuQ6thy6snUdMwhYuMTciaOFliSGvkIWnRcb0AhYindO0hNeFBryCFS4FDFYoFxuyDFTYWFxkxs3DqIQTM8zubb+srfuWfZ/T6bNv7bcfOhtGNeMQHt+dor2iPe/x5nsfOBIYotA8e6dvA8vqbT8M+GyIws5UhULpy9SHYxAeTF/CVN+mPx2DsMXPUSGsCo1AeMOrMK0nukGfiUAICrtHdZYfD18Iy78XaPENfCR8IVqFaT79wWeCF6LfQmUP3H2ELrwiF9KfzwyMMozRnE/yK+BYAxMWSBWm4275r1SfGozRgI8HJkRuZx6zlGEOEpuFBxOYENw3m76Ex6ttP3FYwiM8ScUntmFj3w8elvACT9IUu5VpZ/QAhCWEt6RYFRbZnH7isISwahTS1J0FDEuYg7LFB9zK0PaIQgi/hils8RrbxzEI4Yx5dRxvU8ztZgxKCPtnMrDN59zRqKCEFldS7LYuHiH8vYflNLP7wkMSwoePYLsQ7wGIRQiLBjc0yG1dTELknm36nxCVsEEeZhnlhF5J4SS+7/P5Apr1dQYdEO14E9BH0R9Lqq/1u4yPdUMhqCD4eBWsv+ztSixYNhSCWxoohL8ntv2orwQllKMtkF/M2VUYtvAADg5rXU0kaCFsXim70YzvYSELHcJCFlqGhSx0CAtZaJn1hUWJJwfjvxbC9GbY27/A/8D6wuqP7aojFsJkYiWTP3D00YPQuq/FRjiRFJZPTAj6sqgJYU8POeF4D/SE485SckLsQIkJkY4qWkLsloeWUCDl0xJiM8ZICdFV12gJsWmNpITIZBVqQmx6OCkhOqoRtnDmMD7SdtpIaGi+grX9c1Pj+R6EGIqw/10u0IDP4ps9N4a9IEjbaTPhEoHT9NH5xREL4X6RtlPMQptJY0PiFdpMGhsSr9Bi0phhu1iEcEoVvt94hXCGMf60TbxC+NQavmJ1vMLxXvG2U8xC+GOBP9q+ibA44gHXQsN2Q5AfC/zR2njvvMFeDTPCwm49zWofom0nUkL4sAYxId52IiVE206UhKbpw4SEhoMkJDSsU0BIaJhqQ0douhckIzStVEBIaHrbDx2haTkNMkJD24mS0LQsER2h6WkaOkJT+T5mXyo8v5t9adiZQsed/AiLA54jeCGazQza3LC3g/GRL54FzUKHsJCFlmEhCx3CQhZahoUsdAgLWWgZFrLQISxkoWVYyEKHsJCFlmEhCx3CQhZahoUsdAgLWWgZFrLQISxkoWVYyEKHsJCFlmEhCx3CQhZahoUsdAgLWWgZFrLQISxkoWX+TyF447nxKWKneBKCR+QSvWvHf0rSer94ql+932J2MTV8hrFF1glLxMR7JX6TNd5vYVHKUEw39y3DC2WJtz/YFNMhKxL6iSfhsDQ9cSF2lfMTP8J7KeX8Fw0vVvbqQnV/fwJ867mPeBE+10DZphK9CFVpuhHwEB/C1+3Z4ru2Kd1HHb52vsF56kGovi2XVfknri9U1ffd+yeuLvwJ7PefeL7crCwUCVzRrYYrrKyZVYUCrI56T6l9GlcUCqVN7ywvZd/E8qR0fr+FYbd941a+fSd72clWZx6SjNfnzIX7TnUruzHvL/hwrf1/j+lwAAAAAElFTkSuQmCC" alt="Image 1"></button>
+        <button><img src="https://w7.pngwing.com/pngs/758/928/png-transparent-instagram-illustration-logo-computer-icons-instagram-logo-text-symbol-smile-thumbnail.png" alt="Image 2"></button>
+    </div>
+    <nav>
+    <a href="#"> <img align="left"  src="https://choicehumanitarian.org/wp-content/uploads/2021/05/Vector-CHOICE-Logo-4_no-tag.png" alt="Logo" class="logo"></a>
+       <ul>
+    <li><a href="#" onclick="changeContent('community')">Community</a></li>
+    <li><a href="#" onclick="changeContent('about')">About</a></li>
+    <li><a href="#" onclick="changeContent('ourWork')">Our work</a></li>
+    <li><a href="#" onclick="changeContent('stories')">Stories</a></li>
+    <li><a href="#" onclick="changeContent('donate')">Donate</a></li>
+</ul>
+
+  </nav>
+   
+  <script>
+    function changeContent(page) {
+        let content = document.getElementById("dynamicContent");
+        switch(page) {
+            case 'community':
+                content.innerHTML = "<h1>Community Initiatives</h1><p>Learn about our community-focused programs and initiatives.</p>";
+                break;
+            case 'about':
+                content.innerHTML = "<h1>About Us</h1><p>Get to know our mission and the people behind Choice Humanitarian.</p>";
+                break;
+            case 'ourWork':
+                content.innerHTML = "<h1>Our Work</h1><p>Discover the impactful work we do across various regions.</p>";
+                break;
+            case 'stories':
+                content.innerHTML = "<h1>Stories of Impact</h1><p>Read inspiring stories from those we've helped.</p>";
+                break;
+            case 'donate':
+                content.innerHTML = "<h1>Support Us</h1><p>Your donations make a difference. Find out how you can help!</p>";
+                break;
+            default:
+                content.innerHTML = "<h1>Welcome!</h1><p>Please select an option from the menu.</p>";
+        }
+    }
+</script>
+
+  <div id="dynamicContent">
+    <h1>Welcome!</h1>
+    <p>Please select an option from the menu.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2HZ69YazANY?si=h4SuNgAcPNJD3Mm3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2> Meet the crew </h2>
+    <p> Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+    <h2> Places we've helped </h2>
+    <p>Blah lah blah blah blah blah blah blah blah blah blah blah blah blah blah blah lah blah blah blah blah blah blah blah blah blah blah blah blah blah blah lah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+    <h2>Cities</h2>
+      <p> blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+    <h2> Help Us!</h2>
+    <p> blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah lah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+</div>
+</body>
+</html>
